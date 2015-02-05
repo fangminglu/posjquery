@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="frame/jquery-2.1.3.js"></script>
+    <script src="frame/underscore-min.js"></script>
+    <script type="text/javascript" src="script/bindDbToCSL.js"></script>
+    <script type="text/javascript" src="script/loadDb.js"></script>
+    <script type="text/javascript" src="script/bindProToBSAD.js"></script>
+    <script type="text/javascript" src="script/bindBuyItemsToShowBuy.js"></script>
+    <script>
+        tss();
+        showBuyItemsMain();
+    </script>
+    <title></title>
+</head>
+<body>
+<div >
+    <table border="1">
+      <h1>购物清单</h1>
+        <h2>
+            <table border="1" width="800px" id="buyItemTab">
+                <tr><th>分类</th><th>名称</th><th>单价（元）</th><th>单位</th><th>数量</th><th>小计（元）</th></tr>
+            </table>
+        </h2>
+        <h3>赠送商品</h3>
+        <h4>
+            <table border="1" width="800px" id="promoLIstTab">
+                <tr><th>分类</th><th>名称</th><th>数量</th></tr>
+            </table>
+        </h4>
+
+       <tr>
+           <td>总计：<span id="sum"></span></td>
+       </tr>
+        <tr>
+            <td>节省：<span id="save"></span></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
