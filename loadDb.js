@@ -1,4 +1,3 @@
-
 function allItem()
 {
     return [
@@ -72,16 +71,4 @@ function loadProperty()
     var property=['商品名称：','商品数量：','单价（元）：','单位：'];
     var propertyStr=JSON.stringify(property);
     localStorage.setItem('propertyDb',propertyStr);
-}
-function figureCount()
-{
-    var allItemsStr=localStorage.getItem('allItemsDb');
-    var allItems=JSON.parse(allItemsStr);
-    var list = {};
-    for(var i in allItems)
-    {
-        var name = allItems[i].name;
-        list[name] =0;
-    }
-    localStorage.lists = JSON.stringify(list);
 }
