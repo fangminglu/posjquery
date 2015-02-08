@@ -32,3 +32,9 @@ function addCartNum()
         refreshCart();
     })
 }
+function addNum(item)
+{
+    var lists = JSON.parse(localStorage.lists );
+    lists[item] = parseInt(lists[item])+1;
+    localStorage.lists = JSON.stringify(lists);
+}
